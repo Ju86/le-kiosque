@@ -9,9 +9,6 @@ main {
 .fixed-bg {
   min-height: 100%;
   background-size: cover;
-  /* -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover; */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -28,7 +25,7 @@ h1 {
   font-size: 3.5em;
   color: rgba(255, 255, 255, 1);
   text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
-  opacity: 0.95;
+  /* opacity: 0.95; */
 }
 
 img {
@@ -39,6 +36,7 @@ img {
 .main-text {
   font-size: 5.5em;
   line-height: 0px;
+  margin-top: -250px;
 }
 
 .sub-text {
@@ -74,11 +72,13 @@ img {
 }
 
 .bg-2 {
-  background-image: url("img/IMG_2624.JPG");
+  background-image: url("img/IMG_8946.JPG");
+  background-position: 0% 10%;
 }
 
 .bg-2-1 {
-  background-image: url("img/IMG_2624.JPG");
+  background-image: url("img/IMG_8946.JPG");
+  background-position: 0% 10%;
 }
 
 .bg-3 {
@@ -89,29 +89,8 @@ img {
   background-image: url("img/IMG_0390.JPG");
 }
 
-/* .bg-4 {
-  background-image: url("img/_MG_9111.JPG");
-} */
-
-.fixed-bg.bg-4 {
-  padding: 0;
-}
-
-figure {
-  width: 100%;
-  background-position: center center;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-figcaption {
-  background-color: whitesmoke;
-  color: black;
-  padding: 4px;
-  text-align: center;
-  margin: 4px;
+.bg-4 {
+  background-image: url("img/horaires.jpg");
 }
 
 .hautPage {
@@ -122,38 +101,58 @@ figcaption {
   display: none;
 }
 
-@media screen and (orientation: landscape) {
+.container {
+  display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  body,
+  html,
+  main {
+    min-height: auto;
+    margin: auto 0;
+    font-family: "Raleway", "Microsoft JhengHei";
+    overflow-x: hidden;
+  }
+
+  .bg-1 {
+    background-image: url("img/IMG_0628.JPG");
+    background-position: 70% 50%;
+  }
+
+  .bg-2 {
+    background-image: url("img/IMG_8946.JPG");
+    background-position: 75% 50%;
+  }
+
+  .bg-2-1 {
+    background-image: url("img/IMG_8946.JPG");
+    background-position: 75% 50%;
+  }
+
   .main-text {
     display: none;
   }
- 
- .main-text2 {
-   display: flex;
-   flex-direction: column;
-   margin-top: -210px;
- }
-}
 
-/* @media only screen and (orientation:landscape) {
-
-} */
-.container { display:block; }
-@media only screen and (orientation:portrait){
-  .container {  
-    height: 100vh;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+  .main-text2 {
+    display: block;
+    margin-top: -600px;
   }
-}
-@media only screen and (orientation:landscape){
-  .container {  
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
+
+  .fixed-bg p {
+    text-align: center;
+  }
+
+  .fixed-bg a {
+    display: none;
+  }
+
+  .text-box p {
+    text-align: left;
   }
 }
