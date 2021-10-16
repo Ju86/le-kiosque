@@ -36,7 +36,7 @@ img {
 .main-text {
   font-size: 5.5em;
   line-height: 0px;
-  margin-top: -250px;
+  margin-top: -80px;
 }
 
 .sub-text {
@@ -141,7 +141,7 @@ img {
 
   .main-text2 {
     display: block;
-    margin-top: -480px;
+    margin-top: 280px;
   }
 
   .fixed-bg p {
